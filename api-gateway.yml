@@ -10,18 +10,8 @@ zuul:
       path: /api/merchant/**
     admin-api: 
       path: /api/admin/**
- 
-  hystrix:
-    command:
-        default:
-            execution:
-                isolation:
-                    thread:
-                        timeoutInMilliseconds: 60000
-     
 # Define the Eureka server that handles service registration
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8002/eureka/
- 

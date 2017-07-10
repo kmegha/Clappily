@@ -6,9 +6,6 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8002/eureka/
 
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: false
+feign:
+  hystrix:
+    enabled: false
